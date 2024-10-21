@@ -63,7 +63,7 @@
     <!-------------------------------------- Carousel-------------------------------------->
     <main>
         <div class="carousel">
-            <di00v id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -129,7 +129,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </di00v>
+            </div>
         </div>
     </main>
 
@@ -137,6 +137,7 @@
 
     <!-------------------------------------- Cards-------------------------------------->
     <section class="cards" id="vantagens">
+
         <h2 class="custom-p fs-1 justify-content-center d-flex align-items-center">
             Vantagens Competitivas
         </h2>
@@ -176,119 +177,100 @@
     </section>
     <!-------------------------------------- fim card -------------------------------------->
 
-
     <!-------------------------------------- Accordion -------------------------------------->
-    <section id="estrutura" class="bg-dark1 p-4">
-
-        <div class="container-fluid row d-flex accordion align-items-center">
-            <div class="col-lg-6 text-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/BIEbdvsFA18?si=NDDidtJiw4LxotTE"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section id="estrutura" class="p-4 bg-black">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fs-2 text bg-dark1 text-light" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Mecanismo de Ataque e Impacto
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body fs-3 p-4">
+                        <strong>Nossa arma é uma peça de engenharia precisa e eficiente,</strong> construída sobre uma
+                        base de palitos e equipada com um motor de eixo duplo (3V-6V) capaz de realizar movimentos
+                        rápidos e controlados de 180 graus, tanto para dentro quanto para fora. Esse motor garante uma
+                        operação ágil e exata, impulsionando uma esfera de isopor revestida com agulhas afiadas,
+                        projetada para perfurar com precisão as bexigas dos adversários. Com 21 cm de comprimento, essa
+                        arma estratégica proporciona uma vantagem tática decisiva na batalha.
+                    </div>
+                </div>
             </div>
-
-            <div class="col-lg-6">
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button fs-3 bg-dark1 text-light" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                aria-controls="collapseOne">
-                                Mecanismo de Ataque e Impacto
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Nossa arma é uma peça de engenharia precisa e eficiente,</strong> construída sobre
-                                uma
-                                base de palitos e equipada com um motor de eixo duplo (3V-6V) capaz de realizar
-                                movimentos
-                                rápidos e controlados de 180 graus, tanto para dentro quanto para fora. Esse motor
-                                garante
-                                uma
-                                operação ágil e exata, impulsionando uma esfera de isopor revestida com agulhas afiadas,
-                                projetada para perfurar com precisão as bexigas dos adversários. Com 21 cm de
-                                comprimento,
-                                essa
-                                arma estratégica proporciona uma vantagem tática decisiva na batalha.
-                            </div>
-                        </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-2 text bg-dark1 text-light" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Sistemas Internos
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body fs-3 p-4">
+                        O coração do Prowler é composto por um conjunto de componentes que garantem seu desempenho
+                        impecável. Cabos jumper (macho-fêmea e macho-macho) conectam os circuitos de forma eficiente,
+                        enquanto um shield de motor e o módulo Bluetooth HC-06 coordenam os movimentos e a comunicação.
+                        Três transistores BD135 amplificam os sinais, proporcionando maior potência e precisão, enquanto
+                        uma protoboard organiza de forma prática todos os componentes essenciais.
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-3 bg-dark1 text-light" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                aria-controls="collapseTwo">
-                                Sistemas Internos
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                O coração do Prowler é composto por um conjunto de componentes que garantem seu
-                                desempenho
-                                impecável. Cabos jumper (macho-fêmea e macho-macho) conectam os circuitos de forma
-                                eficiente,
-                                enquanto um shield de motor e o módulo Bluetooth HC-06 coordenam os movimentos e a
-                                comunicação.
-                                Três transistores BD135 amplificam os sinais, proporcionando maior potência e precisão,
-                                enquanto
-                                uma protoboard organiza de forma prática todos os componentes essenciais.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-3 bg-dark1 text-light" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                aria-controls="collapseThree">
-                                Revestimento e Design Externo
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Para completar a construção, o robô conta com um LED colorido que pisca durante as
-                                batalhas,
-                                intensificando a atmosfera de adrenalina. A máscara do personagem Prowler adorna o robô,
-                                conferindo-lhe uma aparência imponente e intimidante. Pilhas de longa duração garantem
-                                energia
-                                suficiente para enfrentar todas as batalhas, enquanto uma bexiga, alvo da arma, faz
-                                parte
-                                fundamental da estratégia de combate.
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-2 text bg-dark1 text-light" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Revestimento e Design Externo
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body fs-3 p-4">
+                        Para completar a construção, o robô conta com um LED colorido que pisca durante as batalhas,
+                        intensificando a atmosfera de adrenalina. A máscara do personagem Prowler adorna o robô,
+                        conferindo-lhe uma aparência imponente e intimidante. Pilhas de longa duração garantem energia
+                        suficiente para enfrentar todas as batalhas, enquanto uma bexiga, alvo da arma, faz parte
+                        fundamental da estratégia de combate.
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
-    <!-------------------------------------- fim accordion -------------------------------------->
+    <!-------------------------------------- fim accordion-------------------------------------->
 
+    <!-------------------------------------- videos -------------------------------------->
 
-    <!-------------------------------------- video ratio -------------------------------------->
-
-    <section id="videos" class="bg-dark1">
-        <div class="ratio ratio-21x9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BIEbdvsFA18?si=NDDidtJiw4LxotTE"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="container-fluid bg-black p-5">
+        <div class="row ">
+            <div class="col-md-6">
+                <h2 class="text-light text-center my-5">Veja o Prowler em movimento!</h2>
+                <div class="ratio ratio-4x3">
+                    <iframe src="https://www.youtube.com/embed/imG7mhqfNGY?si=cVBZcOPYA2Kzhux-" title="YouTube video"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-light text-center my-5">Saiba como montamos:</h2>
+                <div class="ratio ratio-4x3">
+                    <iframe src="https://www.youtube.com/embed/c1qLq-QIYLU?si=zeG874etP1118Nw1" title="YouTube video"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
+    </div>
 
-    </section>
+    <!-------------------------------------- fim videos -------------------------------------->
 
-    <!-------------------------------------- fim ratio -------------------------------------->
+    <!-------------------------------------- equipe -------------------------------------->
 
-    <!-------------------------------------- Storytelling-------------------------------------->
-    <section id="historia">
-        <div class="storytelling d-flex align-items-center">
+    <section id="historia" class="storytelling text-light container-fluid p-5">
+        <div class="d-flex align-items-center">
             <div class="row w-100 p-5">
                 <div class="col-lg-6 text-center">
                     <img src="./Prowler-website/icon/image.png" alt="Mascara do Prowler">
                 </div>
-                <div class="col-lg-6 text-center text-light">
+                <div class="col-lg-6 text-center">
                     <h2 class="text-start my-5 fs-1 pt-6">Quem Somos</h2>
                     <p class="text-start">Tudo começou em 2024, quando uma equipe determinada de engenheiros decidiu
                         enfrentar um desafio audacioso: construir o robô de combate definitivo. Inspirados pelo espírito
@@ -308,47 +290,102 @@
                 </div>
             </div>
         </div>
+
+        <h2 class="text-center my-5">Conheça os criadores desta incrível história:</h2>
+
+        <div class="row d-flex justify-content-around ">
+            <div class=" my-5" style="width: 30rem;">
+                <img src="./Prowler-website/images/imagem carol.jpg" class="card-img-top w-100 rounded"
+                    alt="Imagem da Caroline">
+                <div class="card-body">
+                    <h4 class="mt-2">Caroline da Rocha França</h4>
+                    <p class="card-text p-1">Gerente de Desenvolvimento de Hardware</p>
+                </div>
+            </div>
+
+            <div class=" my-5" style="width: 30rem;">
+                <img src="./Prowler-website/images/imagem guilhermo.jpeg" class="card-img-top w-100 rounded"
+                    alt="Imagem do Guilhermo">
+                <div class="card-body">
+                    <h4 class="mt-2">Guilhermo Spera Payossin</h4>
+                    <p class="card-text p-1">Gerente de Desenvolvimento Back-end</p>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-around">
+                <div class=" my-5" style="width: 30rem;">
+                    <img src="./Prowler-website/images/imagem luis.jpeg" class="card-img-top w-100 rounded"
+                        alt="Imagem do Luis">
+                    <div class="card-body">
+                        <h4 class="mt-2">Luis Carlos</h4>
+                        <p class="card-text p-1">Gerente de Desenvolvimento de Software</p>
+                    </div>
+                </div>
+                <div class=" my-5" style="width: 30rem;">
+                    <img src="./Prowler-website/images/imagem maya.jpeg" class="card-img-top w-100 rounded"
+                        alt="Imagem da Maya">
+                    <div class="card-body">
+                        <h4 class="mt-2">Maya Pereira Tavares</h4>
+                        <p class="card-text p-1">Gerente de Desenvolvimento Web</p>
+                    </div>
+                </div>
+                <div class=" my-5" style="width: 30rem;">
+                    <img src="./Prowler-website/images/imagem vitoria.jpeg" class="card-img-top w-100 rounded"
+                        alt="Imagem da Vitoria">
+                    <div class="card-body">
+                        <h4 class="mt-2">Vitoria Candido</h4>
+                        <p class="card-text p-1">Gerente de Design de Produtos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!--------------------------------------  fim storytelling-------------------------------------->
+    <!--------------------------------------  fim equipe -------------------------------------->
 
     <!--------------------------------------  eventos -------------------------------------->
 
     <section class="eventos" id="eventos">
+
         <div class="robocup row">
-            <div class="col-md-6 texto">
+
+            <div class="col-12 col-lg-6 texto">
                 <h2 class="text-center display-2 my-5">Robocup</h2>
                 <p class="fs-3">A RoboCup da FIAP é uma competição acadêmica que envolve alunos da Faculdade de
-                    Informática e Administração Paulista. O evento permite que os estudantes apliquem conhecimentos em
-                    desafios práticos, como futebol de robôs, batalhas e operações de resgate. Seu objetivo é promover o
+                    Informática e Administração Paulista. O evento permite que os estudantes apliquem conhecimentos
+                    em
+                    desafios práticos, como futebol de robôs, batalhas e operações de resgate. Seu objetivo é
+                    promover o
                     aprendizado interdisciplinar, incentivando a inovação, o trabalho em equipe e a resolução de
                     problemas, preparando os participantes para o mercado de tecnologia.</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-12 col-lg-6">
                 <img src="./Prowler-website/images/robocup.jpg" alt="Imagens de uma batalha do robocup">
             </div>
         </div>
+
         <div class="Next row">
-            <div class="col-md-6">
+            <div class="col-12 col-lg-6">
                 <img src="./Prowler-website/images/maxresdefault.jpg" alt="imagens do evento Next">
             </div>
-            <div class="col-md-6 texto">
+            <div class="col-12 col-lg-6 texto">
                 <h2 class="text-center display-2 my-5">Next</h2>
                 <p class="fs-3">
-                    O Next FIAP é uma iniciativa da Faculdade de Informática e Administração Paulista que transforma o
-                    aprendizado tradicional em uma abordagem prática, preparando os alunos para o mercado de trabalho.
+                    O Next FIAP é uma iniciativa da Faculdade de Informática e Administração Paulista que transforma
+                    o
+                    aprendizado tradicional em uma abordagem prática, preparando os alunos para o mercado de
+                    trabalho.
                     Focado no desenvolvimento de habilidades técnicas e comportamentais, o programa envolve projetos
                     reais e colaboração com empresas, capacitando os estudantes a liderar transformações digitais e
                     construir uma rede de contatos valiosa.</p>
             </div>
         </div>
-
-
     </section>
 
-    <!-------------------------------------- fim eventos-------------------------------------->
+    <!--------------------------------------  fim eventos-------------------------------------->
 
     <!--------------------------------------  contato-------------------------------------->
+
     <div class="col-lg-12" id="contato">
         <form>
             <h2 class="text-light display-3">Contato</h2>
@@ -387,6 +424,7 @@
     </div>
 
     <!--------------------------------------  fim contato-------------------------------------->
+
     <footer>
         <div class="card text-light text-center display-4 rounded-0">
             <div class="card-header">
